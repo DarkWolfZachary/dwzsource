@@ -1,0 +1,28 @@
+Java:
+ 
+package net.mcreator.rickroll.item;
+ 
+import net.minecraft.util.Rarity;
+import net.minecraft.util.Identifier;
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.item.MusicDiscItem;
+import net.minecraft.item.ItemGroup;
+ 
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+ 
+public class MusicDiscMusicDisc extends MusicDiscItem {
+    public MusicDiscMusicDisc() {
+        super(0, new SoundEvent(new Identifier("rick_roll:never_gonna_give_you_up")),
+                new FabricItemSettings().group(ItemGroup.MISC).maxCount(1).rarity(Rarity.RARE));
+    }
+}
+ 
+ 
+ 
+Json:
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "rick_roll:items/160_cb20200523232941"
+  }
+}
